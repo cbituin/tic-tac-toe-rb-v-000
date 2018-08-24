@@ -52,7 +52,9 @@ def turn(board)
     indexNum = input_to_index(index)
         # if index is valid
     if valid_move?(board, indexNum) == true
-      true; move(board, indexNum, character="X")
+      true
+      move(board, indexNum, character)
+      display_board(board)
     else
       false
       turn(board)
