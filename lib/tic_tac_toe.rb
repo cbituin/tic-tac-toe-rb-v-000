@@ -112,6 +112,10 @@ def play(board)
     # counter += 1
   end
 
+  if won?(board)
+    winningPlayer = winner(board)
+    puts "Congratulations #{winningPlayer}!"
+  end
 end
 
 def turn_count(board)
